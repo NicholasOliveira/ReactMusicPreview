@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: flex-start;
   width: 75%;
   flex-direction: column;
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: 100%;
     margin-top: 5rem;
   }

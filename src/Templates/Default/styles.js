@@ -1,10 +1,10 @@
-import styled,{createGlobalStyle} from 'styled-components';
-import {Dark,Light} from '../../theme';
+import styled, { createGlobalStyle } from 'styled-components';
+import { Dark, Light } from '../../theme';
 
 export const Theme = createGlobalStyle`
 :root{
-    ${props=>props.theme==='dark'&&Dark}
-    ${props=>props.theme==='light'&&Light}
+    ${(props) => props.theme === 'dark' && Dark}
+    ${(props) => props.theme === 'light' && Light}
   }
 `;
 
@@ -38,11 +38,11 @@ export const Profile = styled.div`
   top: 20px;
   right: 20px;
   transition: background 0.3s;
-  >img{
+  > img {
     max-width: 2rem;
     max-height: 2rem;
   }
-  &:hover{
+  &:hover {
     opacity: 50%;
   }
 `;

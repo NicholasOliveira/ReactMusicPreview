@@ -17,10 +17,10 @@ export const LoginForm = styled.form`
   padding: 30px;
   width: 400px;
   height: 300px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  h2{
-    color: rgba(255,255,255,0.9);
+  h2 {
+    color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
   }
 `;

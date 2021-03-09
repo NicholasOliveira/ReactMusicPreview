@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     flex-direction: row;
     flex-wrap: nowrap;
     position: relative;

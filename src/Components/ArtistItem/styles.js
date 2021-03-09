@@ -10,19 +10,19 @@ export const ContainerLink = styled(Link)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &:nth-child(5){
+  &:nth-child(5) {
     margin-right: 0px;
   }
-  &:nth-child(10){
+  &:nth-child(10) {
     margin-right: 0px;
   }
-  &:nth-child(15){
+  &:nth-child(15) {
     margin-right: 0px;
   }
-  &:nth-child(20){
+  &:nth-child(20) {
     margin-right: 0px;
   }
-  &:nth-child(25){
+  &:nth-child(25) {
     margin-right: 0px;
   }
 `;

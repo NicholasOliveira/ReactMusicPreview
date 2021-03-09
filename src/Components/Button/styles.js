@@ -15,9 +15,9 @@ export const Buttonbox = styled.button`
   width: 60%;
   height: 2.5rem;
   padding: 5px 10px;
-  font-size: var(--${props=>props.fontSize||'medium'});
+  font-size: var(--${(props) => props.fontSize || 'medium'});
   line-height: var(--extralarge);
-  color:var(--white);
+  color: var(--white);
   font-weight: bold;
   background-color: transparent;
   outline: 0;

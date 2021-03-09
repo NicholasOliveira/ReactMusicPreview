@@ -6,8 +6,12 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
-    'prettier',
     'prettier/react',
+    'some-other-config-you-use',
+    'prettier/@typescript-eslint',
+    'prettier/babel',
+    'prettier',
+    'prettier/prettier',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -17,16 +21,12 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react', 'prettier'],
   rules: {
+    'no-tabs': ['error', { allowIndentationTabs: true }],
     'prettier/prettier': 'error',
-    'react/jsx-filename-extension': [
-      'warn',
-      {extensions: ['.js', '.jsx']}
-    ],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
     'import/prefer-default-export': 'off',
-    'jsx-quotes': ['error', 'prefer-single']
-  }
+    'jsx-quotes': ['error', 'prefer-single'],
+  },
 };

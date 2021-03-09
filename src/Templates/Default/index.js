@@ -6,41 +6,34 @@ import Menu from '../../Components/Menu';
 import { ContextAuth, ContextPlay, ContextTheme } from '../../Context';
 import PlayerMusic from '../../Components/PlayerMusic';
 
-function Template({children}) {
-  const {token, setToken} = useContext(ContextAuth);
+function Template({ children }) {
+  const { token, setToken } = useContext(ContextAuth);
   const [openMenu, setOpenMenu] = useState(false);
-  const {tema,setTema} = useContext(ContextTheme);
-  const {itemPlay, setItemPlay} = useContext(ContextPlay);
+  const { tema, setTema } = useContext(ContextTheme);
+  const { itemPlay, setItemPlay } = useContext(ContextPlay);
 
-  function handleOpenMenu(){
+  function handleOpenMenu() {
     setOpenMenu(!openMenu);
   }
 
   return (
-        <>
-          <Theme theme={tema} />
-          <Container>
-            <Logo 
-              src={LogoDark}
-            />
-            {token &&
-              <>
-                <Profile 
-                  onClick={handleOpenMenu}>
-                  <img src={iconMenu} />
-                </Profile>
-                <Menu openMenu={openMenu} />
-              </>
-            }
-            {children}
-            {
-              itemPlay&&<PlayerMusic 
-              item={itemPlay} 
-              />
-            }
-          </Container>
-        </>
-      )
+    <>
+      <Theme theme={tema} />
+      <Container>
+        <Logo src={LogoDark} />
+        {token && (
+          <>
+            <Profile onClick={handleOpenMenu}>
+              <img src={iconMenu} />
+            </Profile>
+            <Menu openMenu={openMenu} />
+          </>
+        )}
+        {children}
+        {itemPlay && <PlayerMusic item={itemPlay} />}
+      </Container>
+    </>
+  );
 }
 
 export default Template;

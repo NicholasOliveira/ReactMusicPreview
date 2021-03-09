@@ -14,13 +14,13 @@ export const InputText = styled.input`
   width: 100%;
   height: 2.5rem;
   padding: 5px 10px;
-  font-size: var(--${props=>props.fontSize||'medium'});
+  font-size: var(--${(props) => props.fontSize || 'medium'});
   line-height: var(--extralarge);
-  color:var(--white);
+  color: var(--white);
   font-weight: normal;
   background-color: transparent;
   outline: 0;
-  &:placeholder{
+  &:placeholder {
     color: var(--white);
     font-weight: normal;
   }

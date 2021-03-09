@@ -4,9 +4,9 @@ import { Container } from './styles';
 
 function Loading() {
   return (
-  <Container>
-    <img src={LoadingGif} />
-  </Container>
+    <Container>
+      <img src={LoadingGif} />
+    </Container>
   );
 }
 

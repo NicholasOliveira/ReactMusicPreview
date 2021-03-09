@@ -12,6 +12,6 @@ const light = {
   '--smallbox': '10rem',
   '--mediumbox': '15rem',
   '--largebox': '20rem',
-}
+};
 
 export default light;

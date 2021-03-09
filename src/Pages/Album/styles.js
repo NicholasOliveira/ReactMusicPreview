@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: flex-start;
   width: 75%;
   flex-direction: column;
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: 100%;
     margin-top: 5rem;
   }
@@ -20,11 +20,11 @@ export const AlbumContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    a{
+    a {
       margin-right: 0px;
     }
   }
@@ -36,15 +36,15 @@ export const PlaylistContainer = styled.ul`
   color: var(--primary);
 `;
 export const PlaylistMusic = styled.li`
- @media(max-width: 800px) {
-      margin: 0.5rem 0px;
+  @media (max-width: 800px) {
+    margin: 0.5rem 0px;
   }
-  >span{
+  > span {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  audio{
+  audio {
     width: 300px;
     height: 30px;
   }
@@ -53,8 +53,8 @@ export const PlaylistMusic = styled.li`
     height: 30px;
     background-color: var(--primary);
     font-size: 10px;
-}
-  >span>span{
+  }
+  > span > span {
     margin-right: 1rem;
   }
   list-style-type: decimal;
@@ -64,4 +64,3 @@ export const PlaylistMusic = styled.li`
   align-items: center;
   margin-bottom: 1.1rem;
 `;
-

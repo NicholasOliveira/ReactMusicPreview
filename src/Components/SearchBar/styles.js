@@ -16,16 +16,16 @@ export const InputText = styled.input`
   padding: 0.9375rem 0.3125rem 1.4375rem;
   font-size: var(--extralarge);
   line-height: var(--extralarge);
-  color:var(--white);
+  color: var(--white);
   font-weight: bold;
   background-color: transparent;
   outline: 0;
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     padding: 0.9rem 0.3rem 0.3rem;
     font-size: var(--large);
   }
-  &:placeholder{
-    color:var(--primary);
+  &:placeholder {
+    color: var(--primary);
     font-weight: normal;
   }
 `;
