@@ -1,6 +1,6 @@
   const authEndpoint = 'https://accounts.spotify.com/authorize';
   const clientId = "8a17a7a4ea2b484db4454a21acf8ca5c";
-  const redirectUri = "http://localhost:8080";
+  const redirectUri = "https://vibrant-keller-80b98f.netlify.app";
   const scopes = [
     "user-read-currently-playing",
     "user-read-playback-state",
