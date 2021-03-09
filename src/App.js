@@ -1,8 +1,17 @@
-import React, { useContext, useState, useRef, useEffect } from 'react';
+import React, { 
+    useState,
+    useRef,
+    useEffect
+} from 'react';
 import Routes from './routes';
 import {Global} from "./GlobalStyle";
 import Template from "./Templates/Default"
-import {ContextTheme,ContextAuth, ContextPlay, ContextData} from './Context';
+import {
+    ContextTheme,
+    ContextAuth,
+    ContextPlay,
+    ContextData
+} from './Context';
 import {
     BrowserRouter as Router,
     Switch,
