@@ -1,16 +1,19 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
 import { Container } from './styles';
+import { ContextAuth } from '../../Context';
 
 function PlayerMusic({item}) {
+  const { token } = useContext(ContextAuth);
   return (
-  <Container>
-    <audio 
-      controls="controls"
-      id="player"
-      autoPlay
-      src={item?.preview_url} />
-  </Container>
+    <Container>
+      { token &&
+      <audio 
+        controls="controls"
+        id="player"
+        autoPlay
+        src={item?.preview_url} />
+      }
+    </Container>
   );
 }
 

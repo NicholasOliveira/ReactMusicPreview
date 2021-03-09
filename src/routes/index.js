@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react';
-import {Home, Music, Login, Album} from '../Pages';
+import {Home, Login, Album} from '../Pages';
 import Route from './route';
 
 function Routes(){
@@ -14,11 +14,6 @@ function Routes(){
       path="/home"
       noPublic
       component={Home}
-    />
-    <Route
-      path="/music"
-      noPublic
-      component={Music}
     />
     <Route
       path="/albums/:artist"
