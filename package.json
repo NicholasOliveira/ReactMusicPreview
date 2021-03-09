@@ -14,9 +14,10 @@
     ]
   },
   "scripts": {
+    "heroku-prebuild": "npm install --only=dev",
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development --env development --open",
-    "build": "serve -s build"
+    "build": "webpack --mode development"
   },
   "author": "",
   "license": "ISC",
