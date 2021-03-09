@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.9.0",
+    "npm": "6.10.2"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env",
@@ -12,7 +16,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development --env development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode development"
   },
   "author": "",
   "license": "ISC",
