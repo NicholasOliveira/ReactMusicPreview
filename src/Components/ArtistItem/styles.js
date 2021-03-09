@@ -16,4 +16,13 @@ export const ContainerLink = styled(Link)`
   &:nth-child(10){
     margin-right: 0px;
   }
+  &:nth-child(15){
+    margin-right: 0px;
+  }
+  &:nth-child(20){
+    margin-right: 0px;
+  }
+  &:nth-child(25){
+    margin-right: 0px;
+  }
 `;
