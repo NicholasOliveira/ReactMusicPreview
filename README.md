@@ -1,16 +1,21 @@
 # ReactMusicPreview
 
 ### Demo Plication
-https://vibrant-keller-80b98f.netlify.app/
+`https://vibrant-keller-80b98f.netlify.app/`
+
+## Start aplication
+1 - add to path in callback api spotify: 
+`https://vibrant-keller-80b98f.netlify.app`
+
+2- `get to CLIENT ID in dashboard api spotify`
+
+3- `npm install && npm start`
 
 ### Info Aplication
 Using api Spotify, posible insert token(ClientID)
 
 ### Free source (Colaborators)
 need unit tests (free for fork/pull request)
-
-## Start aplication
-`npm install && npm start`
 
 ![Screen 1](https://github.com/rodyrafa/challenge/raw/master/imgs/home_1.jpg)
 ![Screen 2](https://github.com/rodyrafa/challenge/raw/master/imgs/home_2.jpg)
