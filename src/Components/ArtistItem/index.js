@@ -3,15 +3,15 @@ import Title from '../Title';
 import Subtitle from '../Subtitle';
 import Imagem from '../Imagem';
 import { ContainerLink } from './styles';
+import convertToSlug from '../../utils/slugFy';
 
 function ArtistItem({album,data}) {
   return (
     <ContainerLink
       to={{
-        pathname: `/albums/${(album?.artists&&album?.artists[0].name)||'Nome do artista'}`,
+        pathname: `/albums/${album?.artists&&convertToSlug(album?.artists[0].name)||convertToSlug('Nome do artista')}`,
         state: {idAlbum:album?.id}
-      }}
-    >
+      }}>
       <Imagem 
         data={{
           url:(album?.images&&album.images[0].url)||`https://via.placeholder.com/${data?.imgSize || '160'}`, 

@@ -61,7 +61,7 @@ function Home() {
         {data?.items.map(((item,index)=>(
           <ArtistItem
             album={item}
-            key={item.id&&item.id||index}
+            key={item?.id&&item.id||index}
           />
         )))} 
         </ArtistContainer>
@@ -80,9 +80,9 @@ function Home() {
     }
       <ArtistContainer>
         {visitedAlbum.reverse().map(((item,index)=>(
-          <ArtistItem 
+          <ArtistItem
           album={item}
-          key={item.id&&item.id||index}
+          key={item?.id&&item.id||index}
           />
         )))} 
         </ArtistContainer>

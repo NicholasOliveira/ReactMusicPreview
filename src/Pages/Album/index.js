@@ -86,6 +86,7 @@ function Album(props) {
           }} 
           album={{
             images: item?.images,
+            ...item,
             name:item?.name
             ||'Nome do álbum grande de duas linhas'
           }}
@@ -111,10 +112,13 @@ function Album(props) {
               :'0:00'
             }
             &nbsp;-&nbsp;
-            <button 
+            {
+            item?.duration_ms&&(<button 
               onClick={()=>playMusic(item)}>
             [Preview]
-            </button>
+            </button>)
+            }
+            
             </span>
           </PlaylistMusic>
         )))}
