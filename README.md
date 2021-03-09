@@ -1,6 +1,6 @@
 # ReactMusicPreview
 
-### Demo Plication
+### Demo Aplication
 `https://vibrant-keller-80b98f.netlify.app/`
 
 ## Start aplication
