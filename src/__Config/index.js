@@ -1,6 +1,6 @@
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const clientId = '8a17a7a4ea2b484db4454a21acf8ca5c';
-const redirectUri = 'https://vibrant-keller-80b98f.netlify.app';
+const redirectUri = 'https://reactjschallenge.netlify.app';
 const scopes = ['user-read-currently-playing', 'user-read-playback-state'];
 const endPoints = ({ idAlbumTracks = 0, idAlbum = 0, searchTerm = '' }) => {
   return {
