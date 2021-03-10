@@ -17,14 +17,14 @@ import PlayerMusic from '../../Components/PlayerMusic';
 import Link from '../../Components/Link';
 import Loading from '../../Components/Loading';
 
-function Album(props) {
+function Album(props, { history }) {
   const { idAlbum } = props.location.state;
   const [data, setData] = useState({ items: [0, 1, 2, 3] });
 
   const [detailAlbum, setDetailAlbum] = useState({});
 
   const [sourceInfo, setSourceInfo] = useState();
-  const { token } = useContext(ContextAuth);
+  const { token, setToken } = useContext(ContextAuth);
   const { visitedAlbum, setVisitedAlbum } = useContext(ContextData);
   const { setItemPlay } = useContext(ContextPlay);
   const [isError, setIsError] = useState();
@@ -39,7 +39,7 @@ function Album(props) {
           '',
           sourceInfo,
           setSourceInfo,
-          token,
+          { token, setToken },
           'tracksAlbumEndPoint',
           idAlbum,
           0,
@@ -49,7 +49,7 @@ function Album(props) {
           '',
           sourceInfo,
           setSourceInfo,
-          token,
+          { token, setToken, history },
           'detailAlbumEndPoint',
           idAlbum,
           idAlbum,

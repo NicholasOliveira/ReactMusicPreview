@@ -8,17 +8,21 @@ import { Container } from './styles';
 import { ContextAuth, ContextData } from '../../Context';
 import search from '../../helpers/makeRequest';
 
-function Home() {
+function Home({ history }) {
   const [album, setAlbum] = useState('');
   const [sourceInfo, setSourceInfo] = useState();
-  const { token } = useContext(ContextAuth);
+  const { token, setToken } = useContext(ContextAuth);
   const { data, setData, visitedAlbum, setVisitedAlbum } = useContext(
     ContextData,
   );
 
   async function handleSearch(value) {
     setAlbum(value);
-    const response = await search(value, sourceInfo, setSourceInfo, token);
+    const response = await search(value, sourceInfo, setSourceInfo, {
+      token,
+      setToken,
+      history,
+    });
     setData(response?.albums || { items: [0, 1, 2, 3, 4] });
   }
   return (

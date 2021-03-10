@@ -1,18 +1,18 @@
 import React from 'react';
 import axios from '../services/api';
 import { endPoints } from '../__Config';
+import { Redirect } from 'react-router-dom';
 
 const search = async (
   value,
   sourceInfo,
   setsourceInfo,
-  token,
+  { token, setToken, history },
   TypeEndPoint = 'AlbumEndPoint',
   idAlbumTracks = 0,
   idAlbum = 0,
 ) => {
   let searchTerm = value;
-
   if (sourceInfo) {
     sourceInfo.cancel('Operation canceled by the user.');
   }
@@ -39,7 +39,13 @@ const search = async (
     setsourceInfo(undefined);
     return await res.data;
   } catch (err) {
-    //console.log(err)
+    if (err?.response?.status === 401) {
+      setToken(null);
+      localStorage.removeItem('jwt');
+      history.push('/');
+    } else {
+      //console.log(err);
+    }
   }
 };
 export default search;
