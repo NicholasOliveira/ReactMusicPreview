@@ -1,11 +1,11 @@
 # ReactMusicPreview
 
 ### Demo Aplication
-`https://vibrant-keller-80b98f.netlify.app/`
+`https://reactjschallenge.netlify.app/`
 
 ## Start aplication
 1 - add to path in callback api spotify: 
-`https://vibrant-keller-80b98f.netlify.app`
+`https://reactjschallenge.netlify.app`
 
 2- `get to CLIENT ID in dashboard api spotify`
 
