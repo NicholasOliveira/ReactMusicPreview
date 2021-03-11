@@ -15,14 +15,14 @@ export const InputText = styled.input`
   height: 2.5rem;
   padding: 5px 10px;
   font-size: var(--${(props) => props.fontSize || 'medium'});
-  line-height: var(--extralarge);
+  line-height: var(--${(props) => props.fontSize || 'medium'});
   color: var(--white);
   font-weight: normal;
   background-color: transparent;
   outline: 0;
   @media (max-width: 560px) {
-    padding: 2px 10px;
-    margin-bottom: 3px;
+    padding: 2px 10px 0px;
+    margin-bottom: 5px;
   }
   &:placeholder {
     color: var(--white);
