@@ -21,7 +21,7 @@ export const InputText = styled.input`
   background-color: transparent;
   outline: 0;
   @media (max-width: 800px) {
-    padding: 0.9rem 0.3rem 0.3rem;
+    padding: 0.9rem 0.6rem 0.3rem;
     font-size: var(--large);
   }
   &:placeholder {
