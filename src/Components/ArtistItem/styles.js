@@ -10,19 +10,21 @@ export const ContainerLink = styled(Link)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &:nth-child(5) {
-    margin-right: 0px;
-  }
-  &:nth-child(10) {
-    margin-right: 0px;
-  }
-  &:nth-child(15) {
-    margin-right: 0px;
-  }
-  &:nth-child(20) {
-    margin-right: 0px;
-  }
-  &:nth-child(25) {
-    margin-right: 0px;
+  @media (min-width: 780px) {
+    &:nth-child(5) {
+      margin-right: 0px;
+    }
+    &:nth-child(10) {
+      margin-right: 0px;
+    }
+    &:nth-child(15) {
+      margin-right: 0px;
+    }
+    &:nth-child(20) {
+      margin-right: 0px;
+    }
+    &:nth-child(25) {
+      margin-right: 0px;
+    }
   }
 `;

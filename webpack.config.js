@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   module: {
@@ -32,6 +33,11 @@ module.exports = {
     splitChunks: { chunks: 'all' },
   },
   plugins: [
+    new Dotenv({
+      path: './.env',
+      allowEmptyValues: true,
+      systemvars: true,
+    }),
     new HtmlWebpackPlugin({
       favicon: './src/static/images/ico.png',
       template: path.resolve(__dirname, 'src', 'index.html'),

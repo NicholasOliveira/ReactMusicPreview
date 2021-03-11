@@ -112,10 +112,15 @@ function Album(props, { history }) {
                   {item?.name ? noNameBig(item.name, 60) : 'Nome da faixa'}
                 </span>
                 <span>
+                  {console.log(item)}
                   {item?.duration_ms ? millisToTime(item.duration_ms) : '0:00'}
                   &nbsp;-&nbsp;
-                  {item?.duration_ms && (
+                  {item?.preview_url ? (
                     <button onClick={() => playMusic(item)}>[Preview]</button>
+                  ) : (
+                    <strong key={item?.duration_ms} style={{ color: '#f04' }}>
+                      Sem preview
+                    </strong>
                   )}
                 </span>
               </PlaylistMusic>
