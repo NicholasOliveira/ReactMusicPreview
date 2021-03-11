@@ -36,7 +36,7 @@ function Login() {
           value={idCliente}
           placeholder="Seu IdClient"
           onChange={onChange}
-          fontSize="extralarge"
+          fontSize="large"
         />
         <Input
           type="hidden"
