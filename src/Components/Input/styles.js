@@ -20,6 +20,10 @@ export const InputText = styled.input`
   font-weight: normal;
   background-color: transparent;
   outline: 0;
+  @media (max-width: 560px) {
+    padding: 2px 10px;
+    margin-bottom: 3px;
+  }
   &:placeholder {
     color: var(--white);
     font-weight: normal;
